@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amos Ngetich Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <img src="KIPKOECH.jpg" alt="Amos Ngetich Profile Photo" width="180" style="border-radius: 100%;" />
+    <h1>Amos Ngetich</h1>
+    <p>Full-Stack & Mobile Software Developer</p>
+  </header>
+
+  <div id="navigation">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+     <div class="about-image">
+    <img src="AMOS.JPG.jpg" alt="Amos profile" />
+  </div>
+    <p>I'm Amos Ngetich, a full-stack software developer passionate about building impactful web and mobile applications. I work with technologies like HTML, CSS, JavaScript, PHP, Python, Java, and Node.js to deliver scalable, maintainable, and user-friendly solutions. I focus on clean code, efficient architecture, and continuous learning to stay current in the fast-paced tech world.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Bachelor of Information Technology</strong><br>Kenyatta University, Nairobi<br>Expected Graduation: Dec 2025</li>
+      <li><strong>Kaplong Boys High School</strong><br>KCSE: B+ (2017–2020)</li>
+      <li><strong>Githiriga Primary School</strong><br>KCPE: 387 marks (2008–2016)</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+      <li><strong>Backend:</strong> PHP, Node.js, Python</li>
+      <li><strong>Mobile Development:</strong> Java (Android)</li>
+      <li><strong>Databases:</strong> MySQL, MongoDB</li>
+      <li><strong>Tools & Platforms:</strong> Git, GitHub, Firebase, REST APIs</li>
+      <li><strong>Other:</strong> Responsive Design, MVC Architecture, Agile Development</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+  <h2>Projects</h2>
+
+  <section class="project-card">
+    <h3>SmartTask - Mobile Task Manager</h3>
+    <p>Android app for task management with reminders and offline support.</p>
+    <p><strong>Tech:</strong> Java, Firebase</p>
+    <p><a href="#">GitHub Repo</a> | <a href="#">APK Demo</a></p>
+  </section>
+
+  <section class="project-card">
+    <h3>DevHub - Full Stack Developer Platform</h3>
+    <p>Social platform for developers to post blogs and connect.</p>
+    <p><strong>Tech:</strong> Node.js, MongoDB, HTML/CSS</p>
+    <p><a href="#">GitHub Repo</a> | <a href="#">Live Demo</a></p>
+  </section>
+
+  <section class="project-card">
+    <h3>ChatApp - Real-Time Web Chat</h3>
+    <p>Real-time chat application using Socket.io and Node.js.</p>
+    <p><strong>Tech:</strong> Node.js, Socket.io</p>
+    <p><a href="#">GitHub Repo</a> | <a href="#">Live Demo</a></p>
+  </section>
+
+  <section class="project-card">
+    <h3>Mini ERP System</h3>
+    <p>PHP and MySQL based ERP tool for inventory and staff management.</p>
+    <p><strong>Tech:</strong> PHP, MySQL</p>
+    <p><a href="#">GitHub Repo</a> | <a href="#">Screenshots</a></p>
+  </section>
+
+  <section class="project-card">
+    <h3>Mechanic Finder App</h3>
+    <p>Mobile app that helps drivers locate nearby mechanics using GPS.</p>
+    <p><strong>Tech:</strong> Java, PHP, MySQL</p>
+    <p><a href="#">GitHub Repo</a> | <a href="#">App Demo</a></p>
+  </section>
+
+  <section class="project-card">
+    <h3>Responsive Personal Website</h3>
+    <p>A personal website to showcase academic and technical achievements.</p>
+    <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+    <p><a href="#">GitHub Repo</a> | <a href="#">Live Site</a></p>
+  </section>
+</section>
+
+
+  <section id="contact">
+  <h2>Contact Me</h2>
+  <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:amosngetich@email.com">amosngetich@email.com</a></p>
+  <p><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/amosngetich">linkedin.com/in/amosngetich</a></p>
+  <p><i class="fab fa-github"></i> <strong>GitHub:</strong> <a href="https://github.com/amosngetich">github.com/amosngetich</a></p>
+  <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +254 701 288 477</p>
+
+  <div class="contact-box">
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+  <footer>
+    <p>© 2025 Amos Ngetich. All rights reserved.</p>
+  </footer>
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent actual form submission
+
+    // Optional: You could clear the form fields here
+    this.reset();
+
+    // Show a success message
+    alert("Thank you! Your message has been sent.");
+  });
+</script>
+
+</body>
+</html>
