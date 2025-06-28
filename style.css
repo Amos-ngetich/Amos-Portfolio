@@ -1,0 +1,239 @@
+/* Base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* Header */
+/* Header - Flex Layout */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  padding: 40px 30px;
+  background-color: #1a73e8;
+  color: white;
+  flex-wrap: wrap;
+}
+
+header img {
+  border-radius: 100%;
+  border: 3px solid #fff;
+  max-width: 180px;
+  height: auto;
+}
+
+.header-text h1 {
+  margin: 0 0 10px;
+  font-size: 2.2em;
+}
+
+.header-text p {
+  margin: 0;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+
+/* Navigation Bar */
+#navigation {
+  background-color: #0d47a1; /* Deep Blue */
+  border-bottom: 3px solid #1a73e8;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+#navigation nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 14px 0;
+  flex-wrap: wrap;
+}
+
+#navigation nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05em;
+  position: relative;
+  padding: 6px 10px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover underline and color change */
+#navigation nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #f39c12;
+  transition: width 0.3s ease;
+}
+
+#navigation nav a:hover {
+  color: #f39c12;
+  transform: translateY(-3px); /* Lifts up the link */
+}
+
+#navigation nav a:hover::after {
+  width: 100%;
+}
+
+/* Center the image in the About section */
+.about-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.about-image img {
+  max-width: 200px;      /* Optional: Wider for a better rectangle look */
+  width: 100%;
+  height: auto;
+  border-radius: 8px;    /* Slight rounding for modern look (or use 0 for sharp corners) */
+  border: 3px solid #1a73e8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Section styling */
+section {
+  padding: 40px 20px;
+  margin: 20px auto;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  max-width: 900px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.02);
+}
+
+section:hover {
+  background-color: #f0f8ff;
+  transform: translateY(-3px);
+}
+
+/* Headings */
+h2 {
+  color: #1a73e8;
+  margin-bottom: 20px;
+}
+
+/* Lists */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Projects */
+.project-card {
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  background-color: #fff9ec;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  border-color: #f39c12;
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project-card a:hover {
+  color: #005fa3;
+  text-decoration: underline;
+}
+
+/* Contact form */
+.contact-box {
+  margin: 30px auto 0;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.contact-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-box input,
+.contact-box textarea {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-box button {
+  padding: 10px;
+  background-color: #1a73e8;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-box button:hover {
+  background-color: #155bb5;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #666;
+  background-color: #f4f4f4;
+  border-top: 1px solid #ddd;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #navigation nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  .contact-box {
+    width: 90%;
+  }
+}
